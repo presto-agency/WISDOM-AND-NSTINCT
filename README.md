@@ -1,4 +1,7 @@
-# Basic JavaScript, Gulp, HTML, CSS
+# WISDOM AND INSTINCT
+[Deploy here](https://presto-agency.github.io/WISDOM-AND-NSTINCT/)
+
+## Basic JavaScript, Gulp, HTML, CSS
 
 ## Requirement
 
