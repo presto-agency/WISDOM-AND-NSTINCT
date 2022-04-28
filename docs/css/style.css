@@ -155,13 +155,13 @@ h6 {
 }
 
 .btn {
-  display: block;
+  display: inline-block;
   font-size: 48px;
   color: #fff;
   line-height: 54px;
   font-weight: 700;
   padding: 29px 45px;
-  width: 495px;
+  max-width: 100%;
   background: #0076BD;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -177,11 +177,17 @@ h6 {
 }
 
 .healthcare .dashboard.active .dashboard__title.first-screen-hc {
-  -webkit-animation: frame-1 2800ms linear forwards;
-          animation: frame-1 2800ms linear forwards;
+  -webkit-animation-name: show-text;
+          animation-name: show-text;
+  -webkit-animation-duration: 2500ms;
+          animation-duration: 2500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes frame-1 {
+@-webkit-keyframes show-text {
   0% {
     opacity: 0;
     -webkit-transform: translateY(30px);
@@ -208,7 +214,7 @@ h6 {
   }
 }
 
-@keyframes frame-1 {
+@keyframes show-text {
   0% {
     opacity: 0;
     -webkit-transform: translateY(30px);
@@ -236,115 +242,45 @@ h6 {
 }
 
 .healthcare .dashboard.active .dashboard__title.second-screen-hc {
-  -webkit-animation: frame-2 3300ms linear 3000ms forwards;
-          animation: frame-2 3300ms linear 3000ms forwards;
-}
-
-@-webkit-keyframes frame-2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-
-  20% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-
-  90% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    pointer-events: none;
-  }
-}
-
-@keyframes frame-2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-
-  20% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-
-  90% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    pointer-events: none;
-  }
+  -webkit-animation-name: show-text;
+          animation-name: show-text;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .healthcare .dashboard.active .dashboard__title.third-screen-hc {
-  -webkit-animation: frame-3 3300ms linear 6200ms forwards;
-          animation: frame-3 3300ms linear 6200ms forwards;
-}
-
-@-webkit-keyframes frame-3 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-
-  20% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes frame-3 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-
-  20% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+  -webkit-animation-name: show-text-final;
+          animation-name: show-text-final;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-delay: 5500ms;
+          animation-delay: 5500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .healthcare .dashboard.active .dashboard__person {
-  -webkit-animation: frame-4 500ms linear 6000ms forwards;
-          animation: frame-4 500ms linear 6000ms forwards;
+  -webkit-animation-name: remove-person;
+          animation-name: remove-person;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-delay: 5000ms;
+          animation-delay: 5000ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes frame-4 {
+@-webkit-keyframes remove-person {
   0% {
     opacity: 1;
   }
@@ -355,7 +291,7 @@ h6 {
   }
 }
 
-@keyframes frame-4 {
+@keyframes remove-person {
   0% {
     opacity: 1;
   }
@@ -367,11 +303,19 @@ h6 {
 }
 
 .healthcare .dashboard.active .dashboard__bg {
-  -webkit-animation: frame-5 500ms linear 6000ms forwards;
-          animation: frame-5 500ms linear 6000ms forwards;
+  -webkit-animation-name: show-bg;
+          animation-name: show-bg;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-delay: 5500ms;
+          animation-delay: 5500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes frame-5 {
+@-webkit-keyframes show-bg {
   0% {
     opacity: 1;
   }
@@ -381,7 +325,7 @@ h6 {
   }
 }
 
-@keyframes frame-5 {
+@keyframes show-bg {
   0% {
     opacity: 1;
   }
@@ -392,68 +336,108 @@ h6 {
 }
 
 .healthcare .dashboard.active .dashboard__logo {
-  -webkit-animation: frame-6 500ms linear 6000ms forwards;
-          animation: frame-6 500ms linear 6000ms forwards;
+  -webkit-animation-name: scale-logo;
+          animation-name: scale-logo;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-delay: 5500ms;
+          animation-delay: 5500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes frame-6 {
+@-webkit-keyframes scale-logo {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
 
   100% {
-    right: 0;
-    bottom: 121px;
-    -webkit-transform: scale(1.7) translateX(-100px);
-            transform: scale(1.7) translateX(-100px);
+    -webkit-transform: scale(1.7) translateX(-100px) translateY(-20px);
+            transform: scale(1.7) translateX(-100px) translateY(-20px);
   }
 }
 
-@keyframes frame-6 {
+@keyframes scale-logo {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
 
   100% {
-    right: 0;
-    bottom: 121px;
-    -webkit-transform: scale(1.7) translateX(-100px);
-            transform: scale(1.7) translateX(-100px);
+    -webkit-transform: scale(1.7) translateX(-100px) translateY(-20px);
+            transform: scale(1.7) translateX(-100px) translateY(-20px);
   }
 }
 
 .healthcare .dashboard.active .dashboard__logo-wave {
-  -webkit-animation: frame-7 700ms linear 6000ms forwards;
-          animation: frame-7 700ms linear 6000ms forwards;
+  -webkit-animation-name: scale-wave;
+          animation-name: scale-wave;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-delay: 5500ms;
+          animation-delay: 5500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes frame-7 {
+@-webkit-keyframes scale-wave {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
 
   100% {
-    right: 0;
-    bottom: 250px;
-    -webkit-transform: scale(2) translateX(-150px);
-            transform: scale(2) translateX(-150px);
+    -webkit-transform: scale(2) translateX(-150px) translateY(-130px);
+            transform: scale(2) translateX(-150px) translateY(-130px);
   }
 }
 
-@keyframes frame-7 {
+@keyframes scale-wave {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
 
   100% {
-    right: 0;
-    bottom: 250px;
-    -webkit-transform: scale(2) translateX(-150px);
-            transform: scale(2) translateX(-150px);
+    -webkit-transform: scale(2) translateX(-150px) translateY(-130px);
+            transform: scale(2) translateX(-150px) translateY(-130px);
+  }
+}
+
+@-webkit-keyframes show-text-final {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  100% {
+    pointer-events: initial;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes show-text-final {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  100% {
+    pointer-events: initial;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

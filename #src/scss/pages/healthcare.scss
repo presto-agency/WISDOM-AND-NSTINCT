@@ -9,8 +9,11 @@
       .dashboard{
         &__title{
           &.first-screen-hc{
-            animation: frame-1 2800ms linear forwards;
-            @keyframes frame-1{
+            animation-name: show-text;
+            animation-duration: 2500ms;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            @keyframes show-text{
               0%{
                 opacity: 0;
                 transform: translateY(30px);
@@ -31,48 +34,27 @@
             }
           }
           &.second-screen-hc{
-            animation: frame-2 3300ms linear 3000ms forwards;
-            @keyframes frame-2{
-              0%{
-                opacity: 0;
-                transform: translateY(30px);
-              }
-              20%{
-                opacity: 1;
-                transform: translateY(0);
-              }
-              90%{
-                opacity: 1;
-                transform: translateY(0);
-              }
-              100%{
-                opacity: 0;
-                transform: translateY(0);
-                pointer-events: none;
-              }
-            }
+            animation-name: show-text;
+            animation-duration: 3000ms;
+            animation-delay: 2500ms;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
           }
           &.third-screen-hc{
-            animation: frame-3 3300ms linear 6200ms forwards;
-            @keyframes frame-3{
-              0%{
-                opacity: 0;
-                transform: translateY(30px);
-              }
-              20%{
-                opacity: 1;
-                transform: translateY(0);
-              }
-              100%{
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
+            animation-name: show-text-final;
+            animation-duration: 700ms;
+            animation-delay: 5500ms;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
           }
         }
         &__person{
-          animation: frame-4 500ms linear 6000ms forwards;
-          @keyframes frame-4{
+          animation-name: remove-person;
+          animation-duration: 500ms;
+          animation-delay: 5000ms;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+          @keyframes remove-person{
             0%{
               opacity: 1;
             }
@@ -83,8 +65,12 @@
           }
         }
         &__bg{
-          animation: frame-5 500ms linear 6000ms forwards;
-          @keyframes frame-5{
+          animation-name: show-bg;
+          animation-duration: 500ms;
+          animation-delay: 5500ms;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+          @keyframes show-bg{
             0%{
               opacity: 1;
             }
@@ -94,29 +80,45 @@
           }
         }
         &__logo{
-          animation: frame-6 500ms linear 6000ms forwards;
-          @keyframes frame-6{
+          animation-name: scale-logo;
+          animation-duration: 700ms;
+          animation-delay: 5500ms;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+          @keyframes scale-logo{
             0%{
               transform: scale(1);
             }
             100%{
-              right: 0;
-              bottom: 121px;
-              transform: scale(1.7) translateX(-100px);
+              transform: scale(1.7) translateX(-100px) translateY(-20px);
             }
           }
         }
         &__logo-wave{
-          animation: frame-7 700ms linear 6000ms forwards;
-          @keyframes frame-7{
+          animation-name: scale-wave;
+          animation-duration: 700ms;
+          animation-delay: 5500ms;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+          @keyframes scale-wave{
             0%{
               transform: scale(1);
             }
             100%{
-              right: 0;
-              bottom: 250px;
-              transform: scale(2) translateX(-150px);
+              transform: scale(2) translateX(-150px) translateY(-130px);
             }
+          }
+        }
+        @keyframes show-text-final{
+          0%{
+            pointer-events: none;
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          100%{
+            pointer-events: initial;
+            opacity: 1;
+            transform: translateY(0);
           }
         }
       }
