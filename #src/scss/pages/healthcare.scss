@@ -1,10 +1,33 @@
-.healthcare{
   .dashboard{
     position: relative;
     background: $darkbluecolor;
-    width: 1200px;
-    height: 1200px;
     overflow: hidden;
+    &.linkedin{
+      width: 1200px;
+      height: 1200px;
+    }
+    &.facebook{
+      width: 1080px;
+      height: 1080px;
+      .dashboard{
+        &__title{
+          .h-2{
+            font-size: 60px;
+          }
+          &.third-screen-hc{
+            top: 69px;
+            .h-2{
+              font-size: 85px;
+              line-height: 100px;
+            }
+            .btn{
+              margin: 67px 0 0 0;
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
     &.active{
       .dashboard{
         &__title{
@@ -219,4 +242,3 @@
       }
     }
   }
-}
