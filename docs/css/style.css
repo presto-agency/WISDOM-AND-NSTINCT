@@ -183,6 +183,7 @@ h6 {
 
 .dashboard.facebook .dashboard__title .h-2 {
   font-size: 60px;
+  text-indent: 30px;
 }
 
 .dashboard.facebook .dashboard__title.third-screen-hc {
@@ -194,9 +195,67 @@ h6 {
   line-height: 100px;
 }
 
+.dashboard.facebook .dashboard__title.third-screen-hc .h-2:first-child {
+  text-indent: 0;
+}
+
 .dashboard.facebook .dashboard__title.third-screen-hc .btn {
   margin: 67px 0 0 0;
   font-size: 40px;
+}
+
+.dashboard.v-horizontal {
+  width: 970px;
+  height: 250px;
+}
+
+.dashboard.v-horizontal .dashboard__title {
+  bottom: 33px;
+  left: 149px;
+}
+
+.dashboard.v-horizontal .dashboard__title .h-2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-indent: 17px;
+}
+
+.dashboard.v-horizontal .dashboard__title.third-screen-hc {
+  top: 33px;
+  left: 60px;
+  max-width: 660px;
+}
+
+.dashboard.v-horizontal .dashboard__title.third-screen-hc .h-2 {
+  font-size: 40px;
+  line-height: 50px;
+  text-indent: 0;
+}
+
+.dashboard.v-horizontal .dashboard__title.third-screen-hc .btn {
+  position: absolute;
+  top: 50px;
+  left: 281px;
+  font-size: 18px;
+  padding: 10px 17px;
+  line-height: 20px;
+}
+
+.dashboard.v-horizontal .dashboard__person {
+  width: 206px;
+  height: 230px;
+}
+
+.dashboard.v-horizontal .dashboard__logo {
+  right: 20px;
+  bottom: 29px;
+  width: 178px;
+  height: 59px;
+}
+
+.dashboard.v-horizontal .dashboard__logo-wave {
+  width: 417px;
+  height: 419px;
 }
 
 .dashboard.active .dashboard__title.first-screen-hc {
@@ -288,6 +347,38 @@ h6 {
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes show-text-final {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  100% {
+    pointer-events: initial;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes show-text-final {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  100% {
+    pointer-events: initial;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .dashboard.active .dashboard__person {
@@ -432,35 +523,17 @@ h6 {
   }
 }
 
-@-webkit-keyframes show-text-final {
-  0% {
-    pointer-events: none;
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-
+@keyframes scale-logo {
   100% {
-    pointer-events: initial;
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: scale(1.3) translateX(-20px) translateY(-13px);
+            transform: scale(1.3) translateX(-20px) translateY(-13px);
   }
 }
 
-@keyframes show-text-final {
-  0% {
-    pointer-events: none;
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-
+@keyframes scale-wave {
   100% {
-    pointer-events: initial;
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: scale(1.3) translateX(-40px) translateY(-35px);
+            transform: scale(1.3) translateX(-40px) translateY(-35px);
   }
 }
 
@@ -473,11 +546,15 @@ h6 {
   z-index: 2;
 }
 
-.dashboard__title.first-screen-hc p {
+.dashboard__title .h-2 {
   text-indent: 35px;
 }
 
-.dashboard__title.first-screen-hc p:first-child {
+.dashboard__title.first-screen-hc .h-2:first-child {
+  text-indent: 0;
+}
+
+.dashboard__title.second-screen-hc .h-2:first-child {
   text-indent: 0;
 }
 
@@ -493,6 +570,7 @@ h6 {
 }
 
 .dashboard__title.third-screen-hc .h-2 {
+  text-indent: 0;
   font-size: 96px;
   line-height: 105px;
 }
@@ -504,7 +582,7 @@ h6 {
 
 .dashboard__person {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   bottom: 0;
   left: -17px;
   height: 532px;
@@ -569,7 +647,7 @@ h6 {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1008px;
+  height: 100%;
 }
 
 .dashboard__gradient img {
