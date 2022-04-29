@@ -523,14 +523,58 @@ h6 {
   }
 }
 
-@keyframes scale-logo {
+.dashboard.active.v-horizontal .dashboard__logo {
+  -webkit-animation-name: scale-logo-mod;
+          animation-name: scale-logo-mod;
+}
+
+@-webkit-keyframes scale-logo-mod {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
   100% {
     -webkit-transform: scale(1.3) translateX(-20px) translateY(-13px);
             transform: scale(1.3) translateX(-20px) translateY(-13px);
   }
 }
 
-@keyframes scale-wave {
+@keyframes scale-logo-mod {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.3) translateX(-20px) translateY(-13px);
+            transform: scale(1.3) translateX(-20px) translateY(-13px);
+  }
+}
+
+.dashboard.active.v-horizontal .dashboard__logo-wave {
+  -webkit-animation-name: scale-wave-mod;
+          animation-name: scale-wave-mod;
+}
+
+@-webkit-keyframes scale-wave-mod {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.3) translateX(-40px) translateY(-35px);
+            transform: scale(1.3) translateX(-40px) translateY(-35px);
+  }
+}
+
+@keyframes scale-wave-mod {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
   100% {
     -webkit-transform: scale(1.3) translateX(-40px) translateY(-35px);
             transform: scale(1.3) translateX(-40px) translateY(-35px);
