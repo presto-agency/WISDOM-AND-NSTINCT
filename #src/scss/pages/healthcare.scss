@@ -79,6 +79,55 @@
         }
       }
     }
+    &.v-horizontal-sm{
+      width: 728px;
+      height: 90px;
+      .dashboard{
+        &__title{
+          left: 99px;
+          bottom: 19px;
+          .h-2{
+            font-size: 19px;
+            line-height: 19px;
+            text-indent: 11px;
+          }
+          &.third-screen-hc{
+            top: 15px;
+            left: 21px;
+            max-width: 484px;
+            .h-2{
+              font-size: 20px;
+              line-height: 24px;
+              text-indent: 0;
+            }
+            .btn{
+              position: absolute;
+              top: 31px;
+              margin: 0;
+              left: 271px;
+              font-size: 12px;
+              padding: 10px 12px;
+              line-height: 14px;
+            }
+          }
+        }
+        &__person{
+          height: 142px;
+          width: 142px;
+          bottom: -38px;
+        }
+        &__logo-wave{
+          width: 302px;
+          height: 302px;
+        }
+        &__logo{
+          right: 15px;
+          bottom: 14px;
+          width: 125px;
+          height: 42px;
+        }
+      }
+    }
     &.active{
       .dashboard{
         &__title{
@@ -120,14 +169,14 @@
             animation-delay: 5500ms;
             animation-timing-function: linear;
             animation-fill-mode: forwards;
+            pointer-events: none;
             @keyframes show-text-final{
               0%{
-                pointer-events: none;
                 opacity: 0;
                 transform: translateY(30px);
               }
               100%{
-                pointer-events: initial;
+                pointer-events: visible;
                 opacity: 1;
                 transform: translateY(0);
               }
@@ -219,6 +268,63 @@
                 transform: scale(1.3) translateX(-40px) translateY(-35px);
               }
             }
+          }
+        }
+      }
+      &.v-horizontal-sm{
+        .dashboard{
+          &__title{
+            &.first-screen-hc{
+              animation-name: show-text-mod-2;
+              @keyframes show-text-mod-2{
+                0%{
+                  opacity: 0;
+                  transform: translateY(10px);
+                }
+                20%{
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+                90%{
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+                100%{
+                  opacity: 0;
+                  transform: translateY(0);
+                  pointer-events: none;
+                }
+              }
+            }
+            &.second-screen-hc{
+              animation-name: show-text-mod-2;
+              animation-duration: 3000ms;
+              animation-delay: 2500ms;
+              animation-timing-function: linear;
+              animation-fill-mode: forwards;
+            }
+            &.third-screen-hc{
+              animation-name: show-text-final-mod;
+              @keyframes show-text-final-mod{
+                0%{
+                  pointer-events: none;
+                  opacity: 0;
+                  transform: translateY(10px);
+                }
+                100%{
+                  pointer-events: initial;
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+              }
+            }
+          }
+          &__logo{
+            animation-play-state: paused;
+
+          }
+          &__logo-wave{
+            animation-play-state: paused;
           }
         }
       }
