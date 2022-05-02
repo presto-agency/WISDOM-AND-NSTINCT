@@ -1,5 +1,5 @@
 # WISDOM AND INSTINCT
-[Deploy here](https://presto-agency.github.io/WISDOM-AND-NSTINCT/)
+[Deploy here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/)
 
 ## Basic JavaScript, Gulp, HTML, CSS
 
