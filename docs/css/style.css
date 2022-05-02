@@ -176,9 +176,17 @@ h6 {
   height: 1200px;
 }
 
+.dashboard.linkedin.man .dashboard__title.third-screen-hc {
+  max-width: 1000px;
+}
+
 .dashboard.facebook {
   width: 1080px;
   height: 1080px;
+}
+
+.dashboard.facebook.man .dashboard__title.third-screen-hc {
+  max-width: 890px;
 }
 
 .dashboard.facebook .dashboard__title .h-2 {
@@ -207,6 +215,10 @@ h6 {
 .dashboard.v-horizontal {
   width: 970px;
   height: 250px;
+}
+
+.dashboard.v-horizontal.man .dashboard__title.third-screen-hc {
+  max-width: 700px;
 }
 
 .dashboard.v-horizontal .dashboard__title {
@@ -263,6 +275,10 @@ h6 {
   height: 90px;
 }
 
+.dashboard.v-horizontal-sm.man .dashboard__title.third-screen-hc {
+  max-width: 500px;
+}
+
 .dashboard.v-horizontal-sm .dashboard__title {
   left: 99px;
   bottom: 19px;
@@ -317,6 +333,15 @@ h6 {
 .dashboard.v-vertical-sm {
   width: 300px;
   height: 250px;
+}
+
+.dashboard.v-vertical-sm.man .dashboard__title.third-screen-hc {
+  max-width: 260px;
+}
+
+.dashboard.v-vertical-sm.man .dashboard__title.third-screen-hc .btn {
+  top: 155px;
+  padding: 5px 7px;
 }
 
 .dashboard.v-vertical-sm .dashboard__logo-wave {
@@ -386,6 +411,12 @@ h6 {
 .dashboard.v-vertical {
   width: 300px;
   height: 600px;
+}
+
+.dashboard.v-vertical.man .dashboard__title {
+  max-width: 241px;
+  left: 48px;
+  bottom: 252px;
 }
 
 .dashboard.v-vertical .dashboard__title {
