@@ -180,6 +180,9 @@
             }
           }
         }
+        &__gradient{
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.43) 100%);
+        }
       }
     }
     &.v-vertical{
@@ -233,6 +236,9 @@
           left: -34px;
           height: 269px;
           width: 201px;
+        }
+        &__gradient{
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.63) 100%);
         }
       }
     }
