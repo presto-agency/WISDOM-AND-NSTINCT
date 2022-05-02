@@ -244,25 +244,6 @@
             animation-duration: 2500ms;
             animation-timing-function: linear;
             animation-fill-mode: forwards;
-            @keyframes show-text{
-              0%{
-                opacity: 0;
-                transform: translateY(30px);
-              }
-              20%{
-                opacity: 1;
-                transform: translateY(0);
-              }
-              90%{
-                opacity: 1;
-                transform: translateY(0);
-              }
-              100%{
-                opacity: 0;
-                transform: translateY(0);
-                pointer-events: none;
-              }
-            }
           }
           &.second-screen-hc{
             animation-name: show-text;
@@ -278,17 +259,6 @@
             animation-timing-function: linear;
             animation-fill-mode: forwards;
             pointer-events: none;
-            @keyframes show-text-final{
-              0%{
-                opacity: 0;
-                transform: translateY(30px);
-              }
-              100%{
-                pointer-events: visible;
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
           }
         }
         &__person{
@@ -297,15 +267,6 @@
           animation-delay: 5000ms;
           animation-timing-function: linear;
           animation-fill-mode: forwards;
-          @keyframes remove-person{
-            0%{
-              opacity: 1;
-            }
-            100%{
-              opacity: 0;
-              pointer-events: none;
-            }
-          }
         }
         &__bg{
           animation-name: show-bg;
@@ -313,14 +274,6 @@
           animation-delay: 5500ms;
           animation-timing-function: linear;
           animation-fill-mode: forwards;
-          @keyframes show-bg{
-            0%{
-              opacity: 1;
-            }
-            100%{
-              opacity: 0;
-            }
-          }
         }
         &__logo{
           animation-name: scale-logo;
@@ -328,14 +281,6 @@
           animation-delay: 5500ms;
           animation-timing-function: linear;
           animation-fill-mode: forwards;
-          @keyframes scale-logo{
-            0%{
-              transform: scale(1);
-            }
-            100%{
-              transform: scale(1.7) translateX(-100px) translateY(-20px);
-            }
-          }
         }
         &__logo-wave{
           animation-name: scale-wave;
@@ -343,39 +288,15 @@
           animation-delay: 5500ms;
           animation-timing-function: linear;
           animation-fill-mode: forwards;
-          @keyframes scale-wave{
-            0%{
-              transform: scale(1);
-            }
-            100%{
-              transform: scale(2) translateX(-150px) translateY(-130px);
-            }
-          }
         }
       }
       &.v-horizontal{
         .dashboard{
           &__logo{
             animation-name: scale-logo-mod;
-            @keyframes scale-logo-mod{
-              0%{
-                transform: scale(1);
-              }
-              100%{
-                transform: scale(1.3) translateX(-20px) translateY(-13px);
-              }
-            }
           }
           &__logo-wave{
             animation-name: scale-wave-mod;
-            @keyframes scale-wave-mod{
-              0%{
-                transform: scale(1);
-              }
-              100%{
-                transform: scale(1.3) translateX(-40px) translateY(-35px);
-              }
-            }
           }
         }
       }
@@ -384,25 +305,6 @@
           &__title{
             &.first-screen-hc{
               animation-name: show-text-mod-2;
-              @keyframes show-text-mod-2{
-                0%{
-                  opacity: 0;
-                  transform: translateY(10px);
-                }
-                20%{
-                  opacity: 1;
-                  transform: translateY(0);
-                }
-                90%{
-                  opacity: 1;
-                  transform: translateY(0);
-                }
-                100%{
-                  opacity: 0;
-                  transform: translateY(0);
-                  pointer-events: none;
-                }
-              }
             }
             &.second-screen-hc{
               animation-name: show-text-mod-2;
@@ -413,18 +315,6 @@
             }
             &.third-screen-hc{
               animation-name: show-text-final-mod;
-              @keyframes show-text-final-mod{
-                0%{
-                  pointer-events: none;
-                  opacity: 0;
-                  transform: translateY(10px);
-                }
-                100%{
-                  pointer-events: initial;
-                  opacity: 1;
-                  transform: translateY(0);
-                }
-              }
             }
           }
           &__logo{
@@ -455,25 +345,9 @@
           }
           &__logo{
             animation-name: scale-logo-mod-2;
-            @keyframes scale-logo-mod-2{
-              0%{
-                transform: scale(1);
-              }
-              100%{
-                transform: scale(1.2) translateX(-10px) translateY(-5px);
-              }
-            }
           }
           &__logo-wave{
             animation-name: scale-wave-mod-2;
-            @keyframes scale-wave-mod-2{
-              0%{
-                transform: scale(1);
-              }
-              100%{
-                transform: scale(1.3) translateX(-20px) translateY(-15px);
-              }
-            }
           }
         }
       }
@@ -496,25 +370,9 @@
           }
           &__logo{
             animation-name: scale-logo-mod-3;
-            @keyframes scale-logo-mod-3{
-              0%{
-                transform: scale(1);
-              }
-              100%{
-                transform: scale(1.2) translateX(-15px) translateY(-17px);
-              }
-            }
           }
           &__logo-wave{
             animation-name: scale-wave-mod-3;
-            @keyframes scale-wave-mod-3{
-              0%{
-                transform: scale(1);
-              }
-              100%{
-                transform: scale(1.5) translateX(-40px) translateY(-30px);
-              }
-            }
           }
         }
       }
@@ -625,3 +483,164 @@
       }
     }
   }
+  @keyframes show-text{
+    0%{
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    20%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100%{
+      opacity: 0;
+      transform: translateY(0);
+      pointer-events: none;
+    }
+  }
+  @keyframes show-text-mod-2{
+    0%{
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    20%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100%{
+      opacity: 0;
+      transform: translateY(0);
+      pointer-events: none;
+    }
+  }
+
+  @keyframes show-text-final{
+    0%{
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100%{
+      pointer-events: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes show-text-final-mod{
+    0%{
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100%{
+      pointer-events: initial;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes remove-person{
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  @keyframes show-bg{
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+  @keyframes scale-logo{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.7) translateX(-100px) translateY(-20px);
+    }
+  }
+  @keyframes scale-logo-mod{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.3) translateX(-20px) translateY(-13px);
+    }
+  }
+  @keyframes scale-logo-mod-2{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.2) translateX(-10px) translateY(-5px);
+    }
+  }
+  @keyframes scale-logo-mod-3{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.2) translateX(-15px) translateY(-17px);
+    }
+  }
+
+  @keyframes scale-wave{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(2) translateX(-150px) translateY(-130px);
+    }
+  }
+  @keyframes scale-wave-mod{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.3) translateX(-40px) translateY(-35px);
+    }
+  }
+  @keyframes scale-wave-mod-2{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.3) translateX(-20px) translateY(-15px);
+    }
+  }
+  @keyframes scale-wave-mod-3{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.5) translateX(-40px) translateY(-30px);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
