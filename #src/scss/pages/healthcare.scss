@@ -6,6 +6,27 @@
       width: 1440px;
       height: 372px;
       background: $lightbluecolor;
+      &.g-animation{
+        .dashboard{
+          &__title{
+            &.second-screen-hc{
+              top: 380px;
+            }
+            &.third-screen-hc{
+              opacity: 0;
+            }
+          }
+          &__person{
+            left: -450px;
+          }
+          &__logo{
+            right: -305px;
+          }
+          &__logo-wave{
+            right: -580px;
+          }
+        }
+      }
       .dashboard{
         &__title{
           opacity: 1;
@@ -537,6 +558,60 @@
           }
         }
       }
+      &.g-animation{
+        .dashboard{
+          &__title{
+            &.second-screen-hc{
+              animation-name: show-text-mod-3;
+              animation-duration: 500ms;
+              animation-delay: inherit;
+              animation-timing-function: linear;
+              animation-fill-mode: forwards;
+            }
+            &.third-screen-hc{
+              animation-name: show-text-final-mod-2;
+              animation-duration: 2500ms;
+              animation-delay: 500ms;
+              animation-timing-function: linear;
+              animation-fill-mode: forwards;
+              pointer-events: none;
+              @keyframes  show-text-final-mod-2{
+                0%{
+                  opacity: 0;
+                }
+                30%{
+                  opacity: 100%;
+                }
+                100%{
+                  pointer-events: initial;
+                  opacity: 100%;
+                }
+              }
+            }
+          }
+          &__person{
+            animation-name: add-person;
+            animation-duration: 500ms;
+            animation-delay: inherit;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+          }
+          &__logo{
+            animation-name: scale-logo-mod-4;
+            animation-duration: 400ms;
+            animation-delay: 1000ms;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+          }
+          &__logo-wave{
+            animation-name: scale-wave-mod-4;
+            animation-duration: 700ms;
+            animation-delay: 700ms;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+          }
+        }
+      }
     }
     &__title{
       position: absolute;
@@ -682,6 +757,15 @@
       pointer-events: none;
     }
   }
+  @keyframes show-text-mod-3 {
+    0%{
+      top: 380px;
+    }
+    100%{
+      top: 314px;
+    }
+  }
+
 
   @keyframes show-text-final{
     0%{
@@ -716,6 +800,15 @@
       pointer-events: none;
     }
   }
+  @keyframes add-person {
+    0%{
+      left: -450px;
+    }
+    100%{
+      left: -7px;
+    }
+  }
+
 
   @keyframes show-bg{
     0%{
@@ -758,6 +851,14 @@
       transform: scale(1.2) translateX(-15px) translateY(-17px);
     }
   }
+  @keyframes scale-logo-mod-4 {
+    0%{
+      right: -305px;
+    }
+    100%{
+      right: 45px;
+    }
+  }
 
   @keyframes scale-wave{
     0%{
@@ -791,6 +892,15 @@
       transform: scale(1.5) translateX(-40px) translateY(-30px);
     }
   }
+  @keyframes scale-wave-mod-4 {
+    0%{
+      right: -580px;
+    }
+    100%{
+      right: 0;
+    }
+  }
+
 
 
 

@@ -177,6 +177,26 @@ h6 {
   background: #1658A1;
 }
 
+.dashboard.static.g-animation .dashboard__title.second-screen-hc {
+  top: 380px;
+}
+
+.dashboard.static.g-animation .dashboard__title.third-screen-hc {
+  opacity: 0;
+}
+
+.dashboard.static.g-animation .dashboard__person {
+  left: -450px;
+}
+
+.dashboard.static.g-animation .dashboard__logo {
+  right: -305px;
+}
+
+.dashboard.static.g-animation .dashboard__logo-wave {
+  right: -580px;
+}
+
 .dashboard.static .dashboard__title {
   opacity: 1;
   left: 334px;
@@ -770,6 +790,102 @@ h6 {
           animation-name: scale-wave-mod-3;
 }
 
+.dashboard.active.g-animation .dashboard__title.second-screen-hc {
+  -webkit-animation-name: show-text-mod-3;
+          animation-name: show-text-mod-3;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-delay: inherit;
+          animation-delay: inherit;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.dashboard.active.g-animation .dashboard__title.third-screen-hc {
+  -webkit-animation-name: show-text-final-mod-2;
+          animation-name: show-text-final-mod-2;
+  -webkit-animation-duration: 2500ms;
+          animation-duration: 2500ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  pointer-events: none;
+}
+
+@-webkit-keyframes show-text-final-mod-2 {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 100%;
+  }
+
+  100% {
+    pointer-events: initial;
+    opacity: 100%;
+  }
+}
+
+@keyframes show-text-final-mod-2 {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 100%;
+  }
+
+  100% {
+    pointer-events: initial;
+    opacity: 100%;
+  }
+}
+
+.dashboard.active.g-animation .dashboard__person {
+  -webkit-animation-name: add-person;
+          animation-name: add-person;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-delay: inherit;
+          animation-delay: inherit;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.dashboard.active.g-animation .dashboard__logo {
+  -webkit-animation-name: scale-logo-mod-4;
+          animation-name: scale-logo-mod-4;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.dashboard.active.g-animation .dashboard__logo-wave {
+  -webkit-animation-name: scale-wave-mod-4;
+          animation-name: scale-wave-mod-4;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .dashboard__title {
   position: absolute;
   opacity: 0;
@@ -996,6 +1112,26 @@ h6 {
   }
 }
 
+@-webkit-keyframes show-text-mod-3 {
+  0% {
+    top: 380px;
+  }
+
+  100% {
+    top: 314px;
+  }
+}
+
+@keyframes show-text-mod-3 {
+  0% {
+    top: 380px;
+  }
+
+  100% {
+    top: 314px;
+  }
+}
+
 @-webkit-keyframes show-text-final {
   0% {
     opacity: 0;
@@ -1077,6 +1213,26 @@ h6 {
   100% {
     opacity: 0;
     pointer-events: none;
+  }
+}
+
+@-webkit-keyframes add-person {
+  0% {
+    left: -450px;
+  }
+
+  100% {
+    left: -7px;
+  }
+}
+
+@keyframes add-person {
+  0% {
+    left: -450px;
+  }
+
+  100% {
+    left: -7px;
   }
 }
 
@@ -1196,6 +1352,26 @@ h6 {
   }
 }
 
+@-webkit-keyframes scale-logo-mod-4 {
+  0% {
+    right: -305px;
+  }
+
+  100% {
+    right: 45px;
+  }
+}
+
+@keyframes scale-logo-mod-4 {
+  0% {
+    right: -305px;
+  }
+
+  100% {
+    right: 45px;
+  }
+}
+
 @-webkit-keyframes scale-wave {
   0% {
     -webkit-transform: scale(1);
@@ -1289,5 +1465,25 @@ h6 {
   100% {
     -webkit-transform: scale(1.5) translateX(-40px) translateY(-30px);
             transform: scale(1.5) translateX(-40px) translateY(-30px);
+  }
+}
+
+@-webkit-keyframes scale-wave-mod-4 {
+  0% {
+    right: -580px;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes scale-wave-mod-4 {
+  0% {
+    right: -580px;
+  }
+
+  100% {
+    right: 0;
   }
 }
