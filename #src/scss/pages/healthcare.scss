@@ -14,6 +14,15 @@
           }
         }
       }
+      &.ret{
+        .dashboard{
+          &__title{
+            &.third-screen-hc{
+              max-width: 770px;
+            }
+          }
+        }
+      }
     }
     &.facebook{
       width: 1080px;
@@ -23,6 +32,15 @@
           &__title{
             &.third-screen-hc{
               max-width: 890px;
+            }
+          }
+        }
+      }
+      &.ret{
+        .dashboard{
+          &__title{
+            &.third-screen-hc{
+              max-width: 675px;
             }
           }
         }
@@ -114,6 +132,15 @@
           &__title{
             &.third-screen-hc{
               max-width: 500px;
+            }
+          }
+        }
+      }
+      &.ret{
+        .dashboard{
+          &__title{
+            &.third-screen-hc{
+              max-width: 470px;
             }
           }
         }
@@ -243,6 +270,22 @@
             max-width: 241px;
             left: 48px;
             bottom: 252px;
+          }
+        }
+      }
+      &.ret{
+        .dashboard{
+          &__title{
+            max-width: 241px;
+            left: 105px;
+            bottom: 201px;
+            &.third-screen-hc{
+              left: 57px;
+              max-width: 200px;
+              .btn{
+                left: 30px;
+              }
+            }
           }
         }
       }
