@@ -1,7 +1,9 @@
 # WISDOM AND INSTINCT
 [Deploy healthcare here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/)
 
-[Deploy man here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/man.html)
+[Deploy man. here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/man.html)
+
+[Deploy ret. here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/ret.html)
 
 ## Basic JavaScript, Gulp, HTML, CSS
 
