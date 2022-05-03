@@ -141,7 +141,7 @@ h6 {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
 }
 
 .h-2 {
@@ -169,6 +169,67 @@ h6 {
   position: relative;
   background: #073C75;
   overflow: hidden;
+}
+
+.dashboard.static {
+  width: 1440px;
+  height: 372px;
+  background: #1658A1;
+}
+
+.dashboard.static .dashboard__title {
+  opacity: 1;
+  left: 334px;
+  top: 314px;
+}
+
+.dashboard.static .dashboard__title.second-screen-hc .h-2 {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.dashboard.static .dashboard__title.third-screen-hc {
+  left: 357px;
+  top: 65px;
+}
+
+.dashboard.static .dashboard__title.third-screen-hc .h-2 {
+  font-size: 64px;
+  line-height: 64px;
+  text-indent: 34px;
+}
+
+.dashboard.static .dashboard__title.third-screen-hc .h-2:first-child {
+  text-indent: 0;
+}
+
+.dashboard.static .dashboard__title.third-screen-hc .btn {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 21px 0 0 302px;
+  padding: 12px 45px;
+  background: #002C5C;
+}
+
+.dashboard.static .dashboard__person {
+  bottom: -223px;
+  left: -7px;
+  height: 621px;
+  width: 449px;
+}
+
+.dashboard.static .dashboard__logo-wave {
+  width: 708px;
+  height: 706px;
+}
+
+.dashboard.static .dashboard__logo {
+  right: 45px;
+  bottom: 44px;
+}
+
+.dashboard.static .dashboard__gradient {
+  opacity: 0.4;
 }
 
 .dashboard.linkedin {

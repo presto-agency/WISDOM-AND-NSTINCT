@@ -2,6 +2,60 @@
     position: relative;
     background: $darkbluecolor;
     overflow: hidden;
+    &.static{
+      width: 1440px;
+      height: 372px;
+      background: $lightbluecolor;
+      .dashboard{
+        &__title{
+          opacity: 1;
+          left: 334px;
+          top: 314px;
+          &.second-screen-hc{
+            .h-2{
+              font-size: 26px;
+              line-height: 32px;
+            }
+          }
+          &.third-screen-hc{
+            left: 357px;
+            top: 65px;
+            .h-2{
+              font-size: 64px;
+              line-height: 64px;
+              text-indent: 34px;
+              &:first-child{
+                text-indent: 0;
+              }
+            }
+            .btn{
+              font-size: 24px;
+              line-height: 30px;
+              margin: 21px 0 0 302px;
+              padding: 12px 45px;
+              background: $ctabluecolor;
+            }
+          }
+        }
+        &__person{
+          bottom: -223px;
+          left: -7px;
+          height: 621px;
+          width: 449px;
+        }
+        &__logo-wave{
+          width: 708px;
+          height: 706px;
+        }
+        &__logo{
+          right: 45px;
+          bottom: 44px;
+        }
+        &__gradient{
+          opacity: 0.4;
+        }
+      }
+    }
     &.linkedin{
       width: 1200px;
       height: 1200px;
