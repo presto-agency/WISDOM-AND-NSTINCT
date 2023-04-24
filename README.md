@@ -47,8 +47,6 @@ deploy to gh-pages automatically after push to branch
 
 deploy:
 [healthcare](https://presto-agency.github.io/Wisdom-and-instinct/),
-
 [man](https://presto-agency.github.io/Wisdom-and-instinct/man.html),
-
 [ret](https://presto-agency.github.io/Wisdom-and-instinct/ret.html)
 
