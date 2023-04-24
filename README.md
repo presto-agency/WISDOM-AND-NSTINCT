@@ -1,29 +1,52 @@
-# WISDOM AND INSTINCT
-[Deploy healthcare here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/)
+# Wisdom_and_instinct
 
-[Deploy man. here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/man.html)
+**Side - Front-end**
 
-[Deploy ret. here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/ret.html)
+**Station - Office**
 
-## Basic JavaScript, Gulp, HTML, CSS
+## Table of contents
+- **[Introduction](#introduction)**
+- **[Requirements](#requirements)**
+- **[Installation](#installation)**
+- **[Getting Started](#getting-started)**
+- **[Configuration](#configuration)**
 
-## Requirement
+<h2 id="introduction">Introduction</h2>
+
+This is a front side of "Wisdom_and_instinct" advertising project. Created for WP.
+
+<h2 id="requirements">Requirements</h2>
 
 node version: 16.14.2
 
 npm version: 8.5.0
 
-gulp version: 4.0.2
-
-## How to create
+<h2 id="installation">Installation</h2>
 
 ```bash
-npm i
+npm install
+# or
+yarn install
 ```
 
-## How to start develop
+<h2 id="getting-started">Getting Started</h2>
+
+For develop:
 
 ```bash
-gulp
+npm start
+# or
+yarn start
+```
 
-## Build on [localhost:3000](http://localhost:3000/)
+<h2 id="configuration">Configuration</h2>
+
+/docs is compiled folder
+
+deploy to gh-pages automatically after push to branch
+
+deploy: [Deploy healthcare here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/)
+
+[Deploy man. here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/man.html)
+
+[Deploy ret. here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/ret.html)
