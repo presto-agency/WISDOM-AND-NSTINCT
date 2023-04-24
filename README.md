@@ -1,4 +1,4 @@
-# Wisdom_and_instinct
+# Wisdom-and-instinct
 
 **Side - Front-end**
 
@@ -45,8 +45,5 @@ yarn start
 
 deploy to gh-pages automatically after push to branch
 
-deploy: [Deploy healthcare here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/)
+deploy: [Deploy healthcare here](https://presto-agency.github.io/Wisdom-and-instinct/)
 
-[Deploy man. here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/man.html)
-
-[Deploy ret. here](https://presto-agency.github.io/WISDOM-AND-INSTINCT/ret.html)
